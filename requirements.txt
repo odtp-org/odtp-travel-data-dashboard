@@ -1,0 +1,10 @@
+# Please list here all python dependencies of your tool
+cv2
+numpy
+scipy.stats
+diplib
+pandas
+math
+PIL
+os
+csv
