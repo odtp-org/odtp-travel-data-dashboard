@@ -11,9 +11,9 @@
 
 # Actions
 # A1 - Clone github
-#git clone https://github.com/odtp-org/tool-example.git /odtp/odtp-workdir/tool-example
-#cd /odtp/odtp-workdir/tool-example
-#git checkout 79b2889
+git clone https://github.com/zuocsfm/travel_data_dashboard.git /odtp/odtp-workdir/travel_data_dashboard
+cd /odtp/odtp-workdir/travel_data_dashboard
+git checkout 4de5f73
 
 #########################################################
 # IF TOOL REQUIRES A CONFIG FILE. GENERATE IT.
@@ -46,12 +46,12 @@
 # A3 - Run the tool
 # While the output is managed by ODTP and placed in /odtp/odtp-output/
 
-
-RUN THE TOOL COMMAND Here
-
+streamlit run dashboard.py
 
 # The selected output files generated should be placed in the output folder
-cp -r /odtp/odtp-workdir/output/* /odtp/odtp-output
+# Because this is an interactive visulization app.
+# There's no need to copy output
+#cp -r /odtp/odtp-workdir/output/* /odtp/odtp-output
 
 ############################################################################################
 # END OF MANUAL USER APP

@@ -1,1 +1,5 @@
 # Please list here all python dependencies of your tool
+streamlit==1.31.0
+pyproj==3.6.1
+plotly==5.18.0
+streamlit_extras==0.4.0

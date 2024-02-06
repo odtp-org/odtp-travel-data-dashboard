@@ -1,25 +1,21 @@
 # This file should contain basic component information for your component.
-- name: Name of the component
-- component_version: Version
-- repository: Repository
-- commit:
-- author: Author of the component
-- original_author: Author of the tool
-- description: Description
-- tags: ["example", "tutorial"]
-- arguments:
-  - PARAMETER A: ..
-- inputs:
-  - data: /data
-- devices:
-  - gpus: False
+- name: odtp-vis-test
+- component_version: 0.0.1
+- repository: https://github.com/zuocsfm/travel_data_dashboard.git
+- commit: 4de5f73
+- author: C.ZUO/Caviri
+- original_author: C.ZUO
+- description: Visualization dashboard test
+- tags: ["example", "test", "interactive"]
+- arguments: None
+- inputs: None
+- devices: None
 - inputSchema: ...
 - outputSchema: ...
-- env:
-  - PARAMETER_ENV_VARIABLE: ...
-- odtp.ports:
-  - api: 7100
-  - logger: 7101
+- env: None
+- ports: 
+  - app: 8501
+- odtp.ports: None
 - odtp.env:
   - ODTP_MONGO_SERVER
   - ODTP_S3_SERVER
