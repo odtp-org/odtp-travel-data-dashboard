@@ -7,12 +7,12 @@ This is a small test for testing an interactive component.
 1. Build the dockerfile.
 
 ```
-docker build -t odtp-vis-test .
+docker build -t odtp-travel-data-dashboard .
 ```
 
 2. Run the following command.
 
 ```
-docker run -it --rm -p 8501:8501 odtp-vis-test
+docker run -it --rm -p 8501:8501 odtp-travel-data-dashboard
 ```
 
