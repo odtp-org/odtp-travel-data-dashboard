@@ -2,7 +2,7 @@
 - name: odtp-vis-test
 - component_version: 0.0.2
 - repository: https://github.com/zuocsfm/travel_data_dashboard.git
-- commit: 55e07d7fc1ec34c144f5839e45b27209cda9be74
+- commit: 089801bbaa7cf6fcd565d2975xc6702d41947993e
 - author: C.ZUO/Caviri
 - original_author: C.ZUO
 - description: Visualization dashboard test
