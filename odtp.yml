@@ -1,6 +1,6 @@
 # This file should contain basic component information for your component.
 - name: odtp-vis-test
-- component_version: 0.0.1
+- component_version: 0.0.2
 - repository: https://github.com/zuocsfm/travel_data_dashboard.git
 - commit: 4de5f73
 - author: C.ZUO/Caviri
@@ -8,7 +8,8 @@
 - description: Visualization dashboard test
 - tags: ["example", "test", "interactive"]
 - arguments: None
-- inputs: None
+- input:
+  - odtp-app/data/origin-destination.csv
 - devices: None
 - inputSchema: ...
 - outputSchema: ...
