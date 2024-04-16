@@ -11,7 +11,7 @@ This is a dashboard to visualize output from matsim.
 ## ODTP command 
 
 ```odtp new component 
-odtp new odtp-component-entry\
+odtp new odtp-component-entry \
 --name odtp-travel-data-dashboard \
 --component-version 0.1.0 \
 --repository https://github.com/odtp-org/odtp-travel-data-dashboard
