@@ -11,7 +11,7 @@
 
 # Actions
 # A1 - Clone github
-git clone https://github.com/zuocsfm/OD_data_dashboard.git /odtp/odtp-workdir/OD_data_dashboard
+git clone https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/zuocsfm/OD_data_dashboard.git /odtp/odtp-workdir/OD_data_dashboard
 cd /odtp/odtp-workdir/OD_data_dashboard
 git checkout 86bf7bdc631961ac05c976fc280e78d93d666d02
 
