@@ -11,9 +11,9 @@
 
 # Actions
 # A1 - Clone github
-git clone https://github.com/zuocsfm/travel_data_dashboard.git /odtp/odtp-workdir/travel_data_dashboard
-cd /odtp/odtp-workdir/travel_data_dashboard
-git checkout cb52abbb503eb8d326a378241366095d01728740
+git clone https://github.com/zuocsfm/OD_data_dashboard.git /odtp/odtp-workdir/OD_data_dashboard
+cd /odtp/odtp-workdir/OD_data_dashboard
+git checkout 86bf7bdc631961ac05c976fc280e78d93d666d02
 
 
 #########################################################
@@ -22,8 +22,7 @@ git checkout cb52abbb503eb8d326a378241366095d01728740
 
 # A2B - Prepare datafolder
 
-# NOT NEEDED
-# ln -s /odtp/odtp-input/... /odtp/odtp-workdir/...
+ln -s /odtp/odtp-input/eqasim-matsim-output/eqasim_legs.csv /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
 
 
 #########################################################
