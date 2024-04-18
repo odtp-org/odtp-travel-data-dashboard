@@ -36,7 +36,8 @@ docker run -it --rm -p 8501:8501 odtp-travel-data-dashboard
 - v0.1.1
     - New tool repository
     - Dockerfile bug fixed
-    - Introducing github secrets as the repository is private
+    - Cloning with github secrets as the repository is private
+    - Adding `output_id` variable to symbolic path
 
 - v0.1.0
     - Basic functionality. 
