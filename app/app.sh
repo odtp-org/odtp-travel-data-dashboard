@@ -22,7 +22,8 @@ git checkout 86bf7bdc631961ac05c976fc280e78d93d666d02
 
 # A2B - Prepare datafolder
 
-ln -s /odtp/odtp-input/eqasim-matsim-output/simulation_output/${output_id}_legs.csv /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
+rm /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
+ln -s /odtp/odtp-input/eqasim-matsim-output/simulation_output/eqasim_legs.csv /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
 
 
 #########################################################
