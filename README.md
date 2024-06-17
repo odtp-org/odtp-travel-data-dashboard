@@ -47,7 +47,7 @@ docker run -it --rm -p 8502:8501 odtp-travel-data-dashboard
 ## Changelog
 
 - v0.1.3
-    - Add input data path as parameter
+    - Add parameters: DATA_INPUT_OPTION and DATA_INPUT_PATH
 
 - v0.1.2
     - Ubuntu fixed at 22.04

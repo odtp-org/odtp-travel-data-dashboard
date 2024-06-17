@@ -36,13 +36,20 @@ ports:
 # If applicable, parameters exposed by the component
 # Datatype can be str, int, float, or bool.
 parameters:
-  - name: INPUT_DATA_PATH
-    default-value: data/origin-destination.csv
+  - name: DATA_INPUT_OPTION
+    default-value: LOCAL
+    datatype: string
+    description: storage input path
+    options:
+      - LOCAL
+      - STORAGE
+    allow-custom-value: true
+  - name: STORAGE_INPUT_PATH
+    default-value: eqasim-matsim-output/simulation_output/eqasim_legs.csv
     datatype: string
     description: data input path
     options:
-      - /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
-      - /odtp/odtp-input/eqasim-matsim-output/simulation_output/eqasim_legs.csv
+      - eqasim-matsim-output/simulation_output/eqasim_legs.csv
     allow-custom-value: true
 
 # If applicable, data-input list required by the component
