@@ -22,7 +22,7 @@ git checkout 86bf7bdc631961ac05c976fc280e78d93d666d02
 
 # A2B - Prepare datafolder
 if [ "$DATA_INPUT_OPTION" == "STORAGE" ] && [[ -v STORAGE_INPUT_PATH ]]; then
-    ln -s /odtp/odtp-input/$STORAGE_INPUT_PATH /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
+    ln -s /odtp/odtp-input/$INPUT_PATH /odtp/odtp-workdir/OD_data_dashboard/data/origin-destination.csv
 else
     echo "Data is taken as provided by the tool"
 

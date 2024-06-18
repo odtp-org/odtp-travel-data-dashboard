@@ -37,14 +37,14 @@ ports:
 # Datatype can be str, int, float, or bool.
 parameters:
   - name: DATA_INPUT_OPTION
-    default-value: LOCAL
+    default-value: ORIGINAL_DATA
     datatype: string
     description: storage input path
     options:
-      - LOCAL
-      - STORAGE
+      - ORIGINAL_DATA
+      - CUSTOM
     allow-custom-value: true
-  - name: STORAGE_INPUT_PATH
+  - name: DATA_INPUT_PATH
     default-value: eqasim-matsim-output/simulation_output/eqasim_legs.csv
     datatype: string
     description: data input path
