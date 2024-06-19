@@ -35,7 +35,22 @@ ports:
 
 # If applicable, parameters exposed by the component
 # Datatype can be str, int, float, or bool.
-parameters: null
+parameters:
+  - name: DATA_INPUT_OPTION
+    default-value: ORIGINAL_DATA
+    datatype: string
+    description: storage input path
+    options:
+      - ORIGINAL_DATA
+      - CUSTOM
+    allow-custom-value: true
+  - name: DATA_INPUT_PATH
+    default-value: eqasim-matsim-output/simulation_output/eqasim_legs.csv
+    datatype: string
+    description: data input path
+    options:
+      - eqasim-matsim-output/simulation_output/eqasim_legs.csv
+    allow-custom-value: true
 
 # If applicable, data-input list required by the component
 data-inputs:

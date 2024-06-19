@@ -19,19 +19,35 @@ odtp new odtp-component-entry \
 
 ## How to run this tool 
 
-1. Build the dockerfile.
+1. Clone the repo
+
+```
+git clone --recurse-submodules git@github.com:odtp-org/odtp-travel-data-dashboard.git
+cd odtp-travel-data-dashboard
+```
+
+2. Build the dockerfile.
 
 ```
 docker build -t odtp-travel-data-dashboard .
 ```
 
-2. Run the following command.
+3. Fill in parameters
 
 ```
-docker run -it --rm -p 8501:8501 odtp-travel-data-dashboard
+cp .env.dist .env
+```
+
+4. Run the following command.
+
+```
+docker run -it --rm -p 8502:8501 odtp-travel-data-dashboard
 ```
 
 ## Changelog
+
+- v0.1.3
+    - Add parameters: DATA_INPUT_OPTION and DATA_INPUT_PATH
 
 - v0.1.2
     - Ubuntu fixed at 22.04
