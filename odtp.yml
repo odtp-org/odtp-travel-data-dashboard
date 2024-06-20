@@ -39,7 +39,9 @@ parameters:
   - name: DATA_INPUT_OPTION
     default-value: ORIGINAL_DATA
     datatype: string
-    description: storage input path
+    description: >
+      the data can be taken form the tool or from the output of a previous 
+      component in a workflow
     options:
       - ORIGINAL_DATA
       - CUSTOM
@@ -47,7 +49,9 @@ parameters:
   - name: DATA_INPUT_PATH
     default-value: eqasim-matsim-output/simulation_output/eqasim_legs.csv
     datatype: string
-    description: data input path
+    description: >
+      path where the data will be provided when it is coming from the output 
+      of a previous component
     options:
       - eqasim-matsim-output/simulation_output/eqasim_legs.csv
     allow-custom-value: true
