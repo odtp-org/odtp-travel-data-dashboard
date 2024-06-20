@@ -21,7 +21,13 @@ tools:
 
 # If your tool require some secrets token to be passed as ENV to the component
 # This won't be traced in MongoDB
-secrets: null
+secrets:
+  - name: GITHUB_USERNAME
+    datatype: string
+    description: Github username
+  - name: GITHUB_TOKEN
+    datatype: string
+    description: Github token for the above username
 
 # If the tool requires some building arguments such as Matlab license
 build-args: null
@@ -39,7 +45,9 @@ parameters:
   - name: DATA_INPUT_OPTION
     default-value: ORIGINAL_DATA
     datatype: string
-    description: storage input path
+    description: >
+      the data can be taken form the tool or from the output of a previous 
+      component in a workflow
     options:
       - ORIGINAL_DATA
       - CUSTOM
@@ -47,7 +55,9 @@ parameters:
   - name: DATA_INPUT_PATH
     default-value: eqasim-matsim-output/simulation_output/eqasim_legs.csv
     datatype: string
-    description: data input path
+    description: >
+      path where the data will be provided when it is coming from the output 
+      of a previous component
     options:
       - eqasim-matsim-output/simulation_output/eqasim_legs.csv
     allow-custom-value: true
