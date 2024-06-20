@@ -21,7 +21,13 @@ tools:
 
 # If your tool require some secrets token to be passed as ENV to the component
 # This won't be traced in MongoDB
-secrets: null
+secrets:
+  - name: GITHUB_USERNAME
+    datatype: string
+    description: Github username
+  - name: GITHUB_TOKEN
+    datatype: string
+    description: Github token for the above username
 
 # If the tool requires some building arguments such as Matlab license
 build-args: null
