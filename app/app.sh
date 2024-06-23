@@ -11,8 +11,6 @@
 
 # Actions
 # A1 - Clone github
-set -x
-set -e
 git clone https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/zuocsfm/OD_data_dashboard.git /odtp/odtp-workdir/OD_data_dashboard 1> /dev/null
 cd /odtp/odtp-workdir/OD_data_dashboard 1> /dev/null
 git checkout 86bf7bdc631961ac05c976fc280e78d93d666d02 1> /dev/null
@@ -36,5 +34,3 @@ fi
 # A3 - Run the tool
 
 streamlit run dashboard.py
-set +x
-set +e
