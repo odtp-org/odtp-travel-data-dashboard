@@ -5,8 +5,8 @@
 # ADAPT THE TEMPLATE HERE.
 ############################################################################################
 
-bash source "/odtp/odtp-component-client/src/shell/log.sh"
-bash source "/odtp/odtp-component-client/src/shell/traceback.sh"
+source "/odtp/odtp-component-client/src/shell/log.sh"
+source "/odtp/odtp-component-client/src/shell/traceback.sh"
 
 #########################################################
 # GITHUB CLONING OF REPO
