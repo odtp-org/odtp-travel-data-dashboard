@@ -13,7 +13,7 @@ This is a dashboard to visualize output from matsim.
 ```odtp new component 
 odtp new odtp-component-entry \
 --name odtp-travel-data-dashboard \
---component-version 0.1.1 \
+--component-version 0.1.6 \
 --repository https://github.com/odtp-org/odtp-travel-data-dashboard
 ``` 
 
@@ -45,6 +45,15 @@ docker run -it --rm -p 8502:8501 odtp-travel-data-dashboard
 ```
 
 ## Changelog
+
+- v0.1.6
+    - Not github credential required as the github tool repo is now public
+    - Github actions
+    - Refined Dockerfile
+
+- v0.1.5
+
+- v0.1.4
 
 - v0.1.3
     - Add parameters: DATA_INPUT_OPTION and DATA_INPUT_PATH
