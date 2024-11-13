@@ -1,7 +1,7 @@
 # This file should contain basic component information for your component.
 component-name: odtp-travel-data-dashboard
 component-author: Carlos Vivar Rios
-component-version: 0.1.0
+component-version: 0.1.6
 component-repository: https://github.com/odtp-org/odtp-travel-data-dashboard
 component-license: AGPL-3.0
 component-type: ephemeral
