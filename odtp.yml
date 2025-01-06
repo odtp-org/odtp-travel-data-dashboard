@@ -1,11 +1,18 @@
+# Schema version for tracking updates to the schema format
+schema-version: "v0.5.0"
+
 # This file should contain basic component information for your component.
 component-name: odtp-travel-data-dashboard
-component-author: Carlos Vivar Rios
-component-version: v0.1.6
-component-repository: https://github.com/odtp-org/odtp-travel-data-dashboard
+component-version: v0.1.7
 component-license: AGPL-3.0
 component-type: ephemeral
 component-description: ODTP component for origin-destination dashboard
+component-authors:
+  - name: Carlos Vivar Rios
+    orcid: "https://orcid.org/0000-0002-8076-2034"
+component-repository:
+  url: "https://github.com/odtp-org/odtp-travel-data-dashboard"
+  doi: null
 tags:
   - dashboard
   - origin-destination
@@ -14,9 +21,13 @@ tags:
 # Information about the tools
 tools:
   - tool-name: zuocsfm/OD_data_dashboard
-    tool-author: C.ZUO
-    tool-version: 089801bbaa7cf6fcd565d2975xc6702d41947993e
-    tool-repository: 	https://github.com/zuocsfm/OD_data_dashboard.git
+    tool-authors:
+      - name: C.ZUO
+        orcid: null
+    tool-version: 86bf7bdc631961ac05c976fc280e78d93d666d02
+    tool-repository:
+      url: "https://github.com/zuocsfm/OD_data_dashboard.git"
+      doi: null
     tool-license: GPL-2.0 License
 
 # If your tool require some secrets token to be passed as ENV to the component
@@ -34,7 +45,7 @@ build-args: null
 
 # If applicable, ports exposed by the component
 # Include Name, Description, and Port Value for each port
-ports: 
+ports:
   - name: app
     description: Port to serve streamlit app
     port-value: 8501
@@ -66,7 +77,7 @@ parameters:
 data-inputs:
   - name: origin-destination.csv
     type: csv
-    path: odtp-app/data/origin-destination.csv  
+    path: odtp-app/data/origin-destination.csv
     description: origin-destination.csv
 
 # If applicable, data-output list produced by the component
@@ -79,4 +90,5 @@ schema-output: null
 
 # If applicable, define devices needed such as GPU.
 devices:
-  gpu: false
+  - type: gpu
+    required: false
